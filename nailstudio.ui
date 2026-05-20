@@ -24,25 +24,31 @@
    <string>nailStudio</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #A7626B;
-</string>
+   <string notr="true">background-color: #F5EEE6;</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="Titulo">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>220</x>
       <y>90</y>
-      <width>151</width>
+      <width>191</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Script MT Bold</family>
-      <pointsize>22</pointsize>
+      <family>Georgia</family>
+      <pointsize>-1</pointsize>
+      <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #7D5A5A;
+font-family: Georgia;
+font-size: 28px;
+font-style: italic;</string>
     </property>
     <property name="text">
      <string>Nail Studio</string>
@@ -51,18 +57,19 @@
    <widget class="QPushButton" name="BtnAdm">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>150</y>
+      <x>200</x>
+      <y>160</y>
       <width>201</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #CB8D95;
-color: #E6D2B9;
+     <string notr="true">background-color: #C9A0A0;
+color: white;
 border-radius: 10px;
-padding: 3px;
-font-size: 14px;</string>
+padding: 8px;
+font-size: 13px;
+font-family: Segoe UI;</string>
     </property>
     <property name="text">
      <string>Ingresar como Administrador</string>
@@ -72,17 +79,18 @@ font-size: 14px;</string>
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>210</y>
+      <y>220</y>
       <width>151</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #CB8D95;
-color: #E6D2B9;
+     <string notr="true">background-color: #C9A0A0;
+color: white;
 border-radius: 10px;
 padding: 8px;
-font-size: 14px;</string>
+font-size: 13px;
+font-family: Segoe UI;</string>
     </property>
     <property name="text">
      <string>Ingresar como Cliente</string>

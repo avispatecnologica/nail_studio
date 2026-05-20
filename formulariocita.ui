@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormularioCita</class>
+ <widget class="QDialog" name="FormularioCita">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #F5EEE6;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>20</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #7D5A5A;
+font-family: Georgia;
+font-size: 20px;
+font-style: italic;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Registrar Cita</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="inputNombre">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFF8F3;
+    border: 1px solid #D8B4B4;
+    border-radius: 10px;
+    padding: 8px;
+    color: #5C4033;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #C9A0A0;
+    background-color: #FFFDFC;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboServicio">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    background-color: #FFF8F3;
+    border: 1px solid #D8B4B4;
+    border-radius: 8px;
+    padding: 6px;
+    color: #5C4033;
+    font-size: 13px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox:on {
+    border: 2px solid #C9A0A0;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFF8F3;
+    color: #5C4033;
+    selection-background-color: #E8C4C4;
+    selection-color: #4A2C2A;
+    border: 1px solid #D8B4B4;
+    outline: none;
+}</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>240</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+    background-color: #FFF8F3;
+    border: 1px solid #D8B4B4;
+    border-radius: 10px;
+    padding: 6px;
+    color: #5C4033;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 13px;
+}
+
+QDateEdit:focus {
+    border: 2px solid #C9A0A0;
+    background-color: #FFFDFC;
+}
+
+QDateEdit::up-button,
+QDateEdit::down-button {
+    width: 18px;
+    background-color: #EFDADA;
+    border-left: 1px solid #D8B4B4;
+}
+
+QDateEdit::up-button:hover,
+QDateEdit::down-button:hover {
+    background-color: #D8B4B4;
+}
+
+QDateEdit::up-arrow,
+QDateEdit::down-arrow {
+    width: 8px;
+    height: 8px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="timeEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>240</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTimeEdit {
+    background-color: #FFF8F3;
+    border: 1px solid #D8B4B4;
+    border-radius: 10px;
+    padding: 6px;
+    color: #5C4033;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 13px;
+}
+
+QTimeEdit:focus {
+    border: 2px solid #C9A0A0;
+    background-color: #FFFDFC;
+}
+
+QTimeEdit::up-button,
+QTimeEdit::down-button {
+    width: 18px;
+    background-color: #EFDADA;
+    border-left: 1px solid #D8B4B4;
+}
+
+QTimeEdit::up-button:hover,
+QTimeEdit::down-button:hover {
+    background-color: #D8B4B4;
+}
+
+QTimeEdit::up-arrow,
+QTimeEdit::down-arrow {
+    width: 8px;
+    height: 8px;
+}</string>
+   </property>
+   <property name="displayFormat">
+    <string>h:mm AP</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnGuardar">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>320</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #C9A0A0;
+    color: #FFF8F3;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 13px;
+    font-family: Segoe UI;
+}
+
+QPushButton:hover {
+    background-color: #B88B8B;
+}</string>
+   </property>
+   <property name="text">
+    <string>Guardar Cita</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>220</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #7D5A5A;
+font-family: Georgia;
+font-size: 20px;
+font-style: italic;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Ingrese nombre de la clienta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>220</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #7D5A5A;
+font-family: Georgia;
+font-size: 20px;
+font-style: italic;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Servicio</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>220</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #7D5A5A;
+font-family: Georgia;
+font-size: 20px;
+font-style: italic;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Fecha</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>220</y>
+     <width>220</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #7D5A5A;
+font-family: Georgia;
+font-size: 20px;
+font-style: italic;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Hora</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

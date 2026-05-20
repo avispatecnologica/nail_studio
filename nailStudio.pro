@@ -7,8 +7,11 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    formulariocita.cpp \
+    historial.cpp \
     main.cpp \
-    nailstudio.cpp
+    nailstudio.cpp \
+    pantallaadmin.cpp
 
 HEADERS += \
     Chatbot.h \
@@ -20,12 +23,18 @@ HEADERS += \
     Nodo.h \
     Pila.h \
     Servicio.h \
+    formulariocita.h \
     gestorCitas.h \
     gestorClientes.h \
-    nailstudio.h
+    historial.h \
+    nailstudio.h \
+    pantallaadmin.h
 
 FORMS += \
-    nailstudio.ui
+    formulariocita.ui \
+    historial.ui \
+    nailstudio.ui \
+    pantallaadmin.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -5,12 +5,13 @@
 #include "Servicio.h"
 #include "Diseno.h"
 #include "Cita.h"
+#include "pantallaadmin.h"
 #include "Cliente.h"
 nailStudio::nailStudio(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
-     //gestorCli = new gestorClientes();
+
 
     // Pruebas
     Servicio s1(1, 30, "Manicure Basico", 15.0);
@@ -32,7 +33,8 @@ nailStudio::~nailStudio()
 {}
 void nailStudio::on_BtnAdm_clicked()
 {
-    QMessageBox::information(this, "Acceso", "Bienvenida Administradora!");
+    PantallaAdmin ventana(gestor, this);
+    ventana.exec();
 }
 
 void nailStudio::on_BtnCliente_clicked()

@@ -1,4 +1,5 @@
 #pragma once
+#include <cstddef>
 template <typename T> // permite usar datos genericos como ser un cliente o un servicio para no crear distintos nodos para lo mismo
 class Nodo {
 	T dato; // dato generico

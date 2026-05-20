@@ -17,7 +17,6 @@ private slots:
 private:
     Ui::nailStudioClass ui;
     gestorCitas gestor;
-    //gestorClientes* gestorCli;
-    int contador =1;
+    gestorClientes gestorCli;
 };
 
